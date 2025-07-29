@@ -1,0 +1,26 @@
+{
+  "servers": {
+    "handsup-mcp-server": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "dist/index.js"
+      ],
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    "handsup-mcp-dev": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "tsx",
+        "src/index.ts"
+      ],
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  },
+  "inputs": []
+}
